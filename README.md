@@ -1,4 +1,4 @@
-# Example Plugin for GameVault Backend
+# Example Plugins for GameVault Backend
 
 This repository provides a simple example of a plugin to guide you in creating GameVault plugins.
 
