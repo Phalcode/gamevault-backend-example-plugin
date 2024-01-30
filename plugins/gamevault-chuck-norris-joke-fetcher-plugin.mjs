@@ -29,7 +29,7 @@ function fetchChuckNorrisJoke() {
       return response.json();
     })
     .then((data) => {
-      console.log("Chuck Norris Joke:", data.value);
+      console.log("A Chuck Norris Joke to cheer you up:", data.value);
     })
     .catch((error) => {
       console.error("Error fetching Chuck Norris joke:", error.message);
