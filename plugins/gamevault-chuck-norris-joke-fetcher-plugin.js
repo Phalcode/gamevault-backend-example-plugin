@@ -11,6 +11,8 @@
  *
  */
 
+const fetch = require("node-fetch");
+
 const meta = {
   name: "Chuck Norris Joke Fetcher",
   description: "Fetches a random Chuck Norris joke and logs it to the console.",
