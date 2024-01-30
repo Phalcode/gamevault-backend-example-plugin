@@ -2,11 +2,11 @@
  * Chuck Norris Joke Fetcher
  *
  * This plugin shows how to run arbitrary JavaScript code plugins in a gamevault-backend.
- * It will get executet as soon as the plugin is loaded.
+ * It will get executed as soon as the plugin is loaded.
  *
- * This plugin fetches a random Chuck Norris joke from the Chuck Norris API and logs it to the console.
+ * This plugin fetches a random Chuck Norris joke from the Chuck Norris API and logs it to the GameVault logger.
  * It uses the native JavaScript `fetch` API to make a network request to the Chuck Norris API endpoint.
- * The fetched joke is then extracted from the API response and logged to the console.
+ * The fetched joke is then extracted from the API response and logged to the GameVault logger.
  * Error handling is implemented to deal with network issues or problems with the API response.
  *
  */
@@ -30,10 +30,10 @@ function fetchChuckNorrisJoke() {
       return response.json();
     })
     .then((data) => {
-      console.log("A Chuck Norris Joke to cheer you up:", data.value);
+      logger.log("A Chuck Norris Joke to cheer you up:", data.value);
     })
     .catch((error) => {
-      console.error("Error fetching Chuck Norris joke:", error.message);
+      logger.error("Error fetching Chuck Norris joke:", error.message);
     });
 }
 
