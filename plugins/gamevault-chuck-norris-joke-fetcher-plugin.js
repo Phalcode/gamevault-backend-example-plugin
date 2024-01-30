@@ -11,7 +11,7 @@
  *
  */
 
-export const meta = {
+const meta = {
   name: "Chuck Norris Joke Fetcher",
   description: "Fetches a random Chuck Norris joke and logs it to the console.",
   version: "1.0.0",
@@ -37,3 +37,5 @@ function fetchChuckNorrisJoke() {
 }
 
 fetchChuckNorrisJoke();
+
+module.exports = { meta, fetchChuckNorrisJoke };
