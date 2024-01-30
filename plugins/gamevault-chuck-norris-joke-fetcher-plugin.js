@@ -11,9 +11,8 @@
  *
  */
 
-const fetch = require("node-fetch");
-
 const meta = {
+  schemaVersion: 1,
   name: "Chuck Norris Joke Fetcher",
   description: "Fetches a random Chuck Norris joke and logs it to the console.",
   version: "1.0.0",
