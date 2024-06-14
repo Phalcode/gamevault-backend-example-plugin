@@ -1,13 +1,7 @@
 # Example Plugins for GameVault Backend
 
-This repository provides easy to understand examples of gamevault-backend plugins to guide you in creating GameVault plugins.
+This repository provides an example of a gamevault-backend plugin to guide you in creating GameVault plugins.
 
-Check out each plugin file to understand its functioning.
+To use this plugin, copy the plugin folder, for example `example-plugin` folder into your GameVault servers `plugins` volume. (Only works on gamevault-backend v13.0.0 and later).
 
-To activate a plugin on your GameVault Server, set `PLUGIN_ENABLED` to `true` and include the raw URL of the plugin's source in the `PLUGIN_SOURCES` list in your server configuration.
-
-For example:
-```env
-PLUGIN_ENABLED=true
-PLUGIN_SOURCES="https://raw.githubusercontent.com/Phalcode/gamevault-backend-example-plugins/master/plugins/gamevault-chuck-norris-joke-fetcher-plugin.js"
-```
+See [here](https://gamevau.lt/docs/server-docs/plugins) for all information about GameVault plugins and how to use and write them.
